@@ -1,0 +1,21 @@
+﻿.Buton {
+    height:40px;
+    width:120px;
+    background-color :orange;
+    color:white;
+    font-size:18pt;
+}
+.Div{
+    background-color :orangered;
+    width:500px;
+    height:100px;
+    margin-left:50px;
+    margin-top:50px;
+
+}
+.mystyle {
+    color: Red;
+    font-size: medium;
+    background-image: url('Images/test22.png');
+    border-color: Blue;
+}

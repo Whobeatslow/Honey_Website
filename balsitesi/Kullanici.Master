@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="balsitesi.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <link href="css/Tasarim.css" rel="stylesheet" />
+  
+
+    <style type="text/css">
+        .auto-style2 {
+            text-align: center;
+            height: 150px;
+            width: 1320px;
+            color: #FFCC99;
+            font-size: xx-large;
+            margin-left: 300px;
+            margin-right:300px;
+            background-color: #808080;
+        }
+        .auto-style3 {
+            width: 100%;
+            background-color: #C0C0C0;
+            margin-bottom: 0px;
+        }
+        .auto-style5 {
+            font-size: large;
+            
+        }
+        .auto-style6 {
+            text-align: center;
+            color:#ffb400;
+        }
+        .auto-style7 {
+            height: 32px;
+            background-color: #ffb400;
+        }
+        .auto-style8 {
+            font-size: xx-large;
+        }
+        .auto-style10 {
+            width: 1015px;
+            float: left;
+            height: auto;
+        }
+        </style>
+  
+
+</head>
+<body style="height: 150px">
+    <form id="form1" runat="server">
+        <div class="auto-style2" >
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/BALLIZADEFLAMA.png" Width="1320px" />
+            </div>  
+
+                <div style ="margin-left:300px; width:700px; height:20px;"></div>
+        <div style ="margin-left:300px; margin-right:300px;width:1320px; height:40px; background-color: white; font-weight: 700; text-align: center;">
+            <table class="auto-style3">
+                <tr>
+                    <td class="auto-style7"><a href="AnaSayfaaspx.aspx">ANA SAYFA</a></td>
+                    <td class="auto-style7"><a href="Balozellikler.aspx">BALLAR VE ÖZELLİKLERİ</a></td>
+                    <td class="auto-style7"><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
+                    <td class="auto-style7"><a href="iletisim.aspx">İLETİŞİM</a></td>
+                </tr>
+            </table>
+        </div>
+        <div style ="margin-left:300px; width:700px; height:25px;"></div>
+        
+        <div style ="margin-left : 300px;margin-right:300px; width:1320px; height:500px;">
+
+        <div style =" float:left; width:200px; height:auto; background-color: #808080; ">
+
+                 <div class="auto-style6">
+                     <span class="auto-style5"><strong style="text-align: left">
+                     <br />
+                     ÇEŞİTLER</strong></span><br />
+                     <br />
+                 </div>
+
+                 <strong>
+
+                 <asp:DataList ID="DataList1" runat="server" style="text-align: left" Width="202px" CssClass="auto-style8" ForeColor="#FFCC00">
+                     <ItemTemplate>
+                         <div style="border: thin solid #808080">
+                            <a href="CesitDetay.aspx?Cesitid=<%#Eval("Cesitid") %>"> <asp:Label ID="Label1" runat="server" style="text-align: left" Text='<%# Eval("CesitAd") %>'></asp:Label></a>
+                         </div>
+                     </ItemTemplate>
+                 </asp:DataList>
+                 </strong>
+            </div>
+
+        
+        <div style ="margin-left:50px; background-color: #ffb400;" class="auto-style10">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            
+
+            
+            
+
+        </div>
+        
+
+            
+        
+            
+        
+                
+        </form>
+</body>
+</html>
+

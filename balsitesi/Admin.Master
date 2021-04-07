@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="balsitesi.Site1" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <link href="css/Tasarim.css" rel="stylesheet" />
+  
+
+    <style type="text/css">
+        .auto-style2 {
+            text-align: center;
+            height: 150px;
+            width: 700px;
+            color: #FFCC99;
+            font-size: xx-large;
+            margin-left: 300px;
+            background-color: #808080;
+        }
+        .auto-style5 {
+            font-size: large;
+            
+        }
+        .auto-style6 {
+            text-align: center;
+            background-color:#0082ff;
+            color:#ffb400;
+        }
+        .auto-style7 {
+            width: 100%;
+            color:#000000;
+           
+        }
+        .auto-style8 {
+            height: 24px;
+        }
+        .auto-style9 {
+            height: 23px;
+        }
+        .auto-style10 {
+            height: 22px;
+        }
+        </style>
+  
+
+</head>
+<body style="height: 150px">
+    <form id="form1" runat="server">
+        <div class="auto-style2" >
+            
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/ballızade login.png" Width="700px" />
+            
+            <strong>
+            <br />
+            </strong></div>  
+
+                <div style ="margin-left:300px; width:700px; height:20px;"></div>
+        
+        <div style ="margin-left : 300px; width:700px; height:500px;">
+
+        <div style =" float:left; width:200px; height:auto; background-color: #808080; ">
+
+                 <div class="auto-style6">
+                     <span class="auto-style5">
+                     <table class="auto-style7">
+                         <tr>
+                             <td><strong>MENÜLER</strong></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style10"><strong></strong></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style9"><strong style="border: thin solid #FFFFFF"><a href="Cesitler.aspx?loginid=1">ÇEŞİTLER</a></strong></td>
+                         </tr>
+                         <tr>
+                            <td class="auto-style8"><strong style="border: thin solid #FFFFFF"><a href="BallarAdmin.aspx?loginid=1">BALLAR</a></strong></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style8"><strong style="border: thin solid #FFFFFF"><a href="HakkimizdaAdmin.aspx?loginid=1">HAKKIMIZDA</a></strong></td>
+                         </tr>
+                         <tr>
+                             <td>&nbsp;</td>
+                         </tr>
+                     </table>
+                     <strong style="text-align: left">
+                     <br />
+                     </strong></span><br />
+                     <br />
+                 </div>
+
+            </div>
+
+        
+        <div style ="margin-left:50px; width:450px; float:left; height:auto; background-color:#0082ff;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            
+
+            
+            
+
+        </div>
+        
+
+            
+        
+            
+        
+                
+        </form>
+</body>
+</html>
+
